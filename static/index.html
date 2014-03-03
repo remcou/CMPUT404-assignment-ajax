@@ -264,11 +264,11 @@ function getColor()
 // Add the application specific mouse listeners!
 //XXX: TODO Make these prettier!
 mouse.mousedowners.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'blue','radius':10});
+    addEntityWithoutName({'x':x,'y':y,'colour':getColor(),'radius':10});
 });
 
 mouse.mouseuppers.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'red','radius':10});
+    addEntityWithoutName({'x':x,'y':y,'colour':getColor(),'radius':10});
 });
 
 mouse.mousedraggers.push(function(x,y,clicked,e) {
