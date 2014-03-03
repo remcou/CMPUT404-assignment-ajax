@@ -102,12 +102,12 @@ def world():
 
 @app.route("/entity/<entity>")    
 def get_entity(entity):
-    return resp_entity( entity )
+    return entity_response( entity )
 
 @app.route("/clear", methods=['POST','GET'])
 def clear():
     myWorld.clear()
-    return resp_world()
+    return world_response()
 
 if __name__ == "__main__":
     app.run()
