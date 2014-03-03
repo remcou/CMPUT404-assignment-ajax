@@ -253,12 +253,20 @@ var colorCount = 0;
 function getColor()
 {
     colorCount++;
-    if( colorCount%3 == 0 )
-        return 'blue'
-    else if( colorCount%3 == 1 )
+    if( colorCount%7 == 0 )
         return 'red'
+    else if( colorCount%7 == 1 )
+        return 'orange'
+    else if( colorCount%7 == 2 )
+        return 'yellow'
+    else if( colorCount%7 == 3 )
+        return 'green'
+    else if( colorCount%7 == 4 )
+        return 'blue'
+    else if( colorCount%7 == 5 )
+        return 'indigo'
     else
-        return 'purple'
+        return 'violet'
 }
 
 // Add the application specific mouse listeners!
